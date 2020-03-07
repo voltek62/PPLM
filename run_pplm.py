@@ -732,7 +732,7 @@ def run_pplm_example(
     #    pretrained_model,
     #    output_hidden_states=True
     #)
-    model = AutoModelWithLMHead.from_pretrained("flaubert/flaubert_large_cased", output_hidden_states=True)
+    model = AutoModelWithLMHead.from_pretrained("flaubert/flaubert_large_cased")
     model.to(device)
     model.eval()
 
