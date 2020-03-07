@@ -65,7 +65,7 @@ BAG_OF_WORDS_ARCHIVE_MAP = {
     'religion': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/religion.txt",
     'science': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/science.txt",
     'space': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/space.txt",
-    "technology": "https://storage.cloud.google.com/text-generation/bow/technology.txt"
+    "technology": "https://00e9e64bac082e9e2d140a9a430f9997c799b693ad9ec04d24-apidata.googleusercontent.com/download/storage/v1/b/text-generation/o/bow%2Ftechnology.txt?qk=AD5uMEvgZQPQFx1gf7SSG6jpv3oYGpmJCMKvqjShdL4r5vx5HD6sgAKgwpo2xlTHFPqtxgwGmPwSb8dkeU_ueyotb1SR1eid-ypO7aRjKZ4H3QLmSwOdnHJySwtDU-45FI-rq9zj0fA3oiSL0wThkmeFkAPirIjXE4hrNuZslqNNIxs6hZ9dYl8sYUkcTnIO3T-hckkSil4j9WBKQhKOLMuW_W5nBQwlTp6jxUB4-4dGLerH3yj07XuOP9yTHX_xfD1IvHKwEPo_-5WtXww5WXPV4k8h_-9khRXiZaYODOr9htiHgnQaCvR1035hPKnCrpTB4MhwteHnKrkMAD3fYNedItL2IJdXAq7MVJFjSXnlKrYmVmaQeHVRFcbGayMEnZZqs_DBaSVvMiipcbnLpUs5QK_nphSS8mr7czXqHe0gPb2dyVAjq2KNuuczeicsktILnp7Oo9zo4Ab0ax4KYjI_se5m8RrrvKwmRdKBCLEyjSVeVfM3POVMekgZCV7tpJl4ExgA20UrShTZ0mqrq849zdArFlrNTXwUyr1bNiy24UI8MAgEXL7v0DlD-nnnDp1RwW5pym7tsHH7Li8S-ltXUj80suVHd-yAZ6j1KA_sVLqVet0TsEELMKcFnTgBqY9ta8mhX1gboIWaPWMK1iqqzDb3wEcdYnl0rzSAir9PhgiSbffzR6pF9WdTCOaPRYiZf4GgPdopeGaArqBTQ7XZizJT9jo8ItP8c2KYCq36QayBoIRePqoYregPoZqg9-zZb22VjNA2rWIsiwQHwbVsV0fRyLtNma7c6wjjQFBrZZBU_ntVNsg"
 }
 
 DISCRIMINATOR_MODELS_PARAMS = {
