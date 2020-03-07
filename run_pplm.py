@@ -33,6 +33,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 from tqdm import trange
 from transformers import GPT2Tokenizer
+from transformers import AutoTokenizer, AutoModelWithLMHead
 from transformers.file_utils import cached_path
 from transformers.modeling_gpt2 import GPT2LMHeadModel
 
@@ -64,7 +65,7 @@ BAG_OF_WORDS_ARCHIVE_MAP = {
     'religion': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/religion.txt",
     'science': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/science.txt",
     'space': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/space.txt",
-    'technology': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/technology.txt",
+    "technology": "https://storage.cloud.google.com/text-generation/bow/technology.txt"
 }
 
 DISCRIMINATOR_MODELS_PARAMS = {
@@ -727,16 +728,18 @@ def run_pplm_example(
                 "to discriminator's = {}".format(discrim, pretrained_model))
 
     # load pretrained model
-    model = GPT2LMHeadModel.from_pretrained(
-        pretrained_model,
-        output_hidden_states=True
-    )
+    #model = GPT2LMHeadModel.from_pretrained(
+    #    pretrained_model,
+    #    output_hidden_states=True
+    #)
+    model = AutoModelWithLMHead.from_pretrained("flaubert/flaubert_large_cased", output_hidden_states=True)
     model.to(device)
     model.eval()
 
     # load tokenizer
-    tokenizer = GPT2Tokenizer.from_pretrained(pretrained_model)
-
+    #tokenizer = GPT2Tokenizer.from_pretrained(pretrained_model)
+    tokenizer = AutoTokenizer.from_pretrained("flaubert/flaubert_large_cased")
+    
     # Freeze GPT-2 weights
     for param in model.parameters():
         param.requires_grad = False
